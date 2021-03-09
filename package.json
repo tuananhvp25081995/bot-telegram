@@ -1,0 +1,28 @@
+{
+  "name": "bitkingreturn-nodejs",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "nodemon": "nodemon ./bin/www",
+    "start": "nodemon ./bin/www",
+    "scss": "node-sass --watch ./public/stylesheets/scss/ -o ./public/stylesheets/css/  --recursive"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*",
+      "docs/*"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "~4.16.1",
+    "express-rate-limit": "^5.1.3",
+    "express-session": "^1.17.1",
+    "node-telegram-bot-api": "^0.51.0",
+    "now-env": "^3.2.0",
+    "telegram-node-bot": "^4.0.5",
+    "url": "^0.11.0",
+    "ytdl-core": "^4.5.0"
+  }
+}
